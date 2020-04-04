@@ -1,0 +1,108 @@
+.login-window {
+    width: 600px;
+    min-height: 600px;
+    padding: 65px 60px 65px 60px;
+    background-color: #FFF;
+    box-shadow: 2px 2px 10px 1px rgba(133,133,133,1);
+    margin: auto;
+    * {
+        background-color: white;
+    }
+
+    .login-header {
+        font-size: 2.5rem;
+        @media (max-width: 600px) {
+            font-size: 1.8rem;
+        }
+        @media (max-width: 465px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .login-subheader {
+        color: #7D7F80;
+        @media (max-width: 600px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    .login-field {
+        font-size: 1.5rem;
+
+        .login-label {
+            display: block;
+            margin-bottom: 15px;
+            @media (max-width: 600px) {
+                font-size: 1.2rem;
+            }
+        }
+
+        .login-input {
+            width: 90%;
+            margin-bottom: 15px;
+            padding: 20px 15px;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            font-size: 1.2rem;
+        }
+    }
+    
+    .login-remember {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        .css-label {
+            font-size: 1.2rem;
+            @media (max-width: 600px) {
+                font-size: 1rem;
+            }
+        }
+            
+    }
+
+    .login-signin {
+        margin-top: 15px;
+        margin-right: 0px;
+        padding: 20px 40px;
+        font-size: 1.5rem;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        @media (max-width: 600px) {
+            width:90%;
+            font-size: 1.2rem;
+        }
+
+        &:hover {
+            background-color: blue;
+            color: white;
+        }
+    }
+}
+
+input[type=checkbox].css-checkbox {
+position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+padding-left:30px;
+height:25px; 
+display:inline-block;
+line-height:25px;
+background-repeat:no-repeat;
+background-position: 0 0;
+vertical-align:middle;
+cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+background-position: 0 -25px;
+}
+label.css-label {
+background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_391ce065f36b1460c4845fa9b5173fba.png);
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
